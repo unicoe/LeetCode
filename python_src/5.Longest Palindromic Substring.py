@@ -1,6 +1,8 @@
 class Solution(object):
     def longestPalindrome(self, s):
         """
+        使用manacher算法，O(n)的时间里算出最长字符串的长度和中心位置，然后再从处理过后的字符串中取出对应的最长回文串
+        ''.join(list) 将list转换为字符串
         :type s: str
         :rtype: str
         """
